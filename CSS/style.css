@@ -1,0 +1,406 @@
+*
+{
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+ul
+{
+ list-style: none; 
+}
+body
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2;
+  background: #dadada;
+}
+/* Phần bao trang */
+.container
+{
+  resize: both;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+nav
+{
+  margin-top: 15px;
+  width: 100%;
+  
+}
+
+
+.logo
+{
+  margin: 2px 5px;
+  padding-top: 3px;
+}
+
+/* Thanh tìm kiếm */
+.container-1{
+  width: 375px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 300px;
+  height: 25px;
+  text-align: center;
+  margin: 8px auto;
+  padding: 6px 16px;
+  background: rgb(28, 29, 32);
+  border: none;
+  font-size: 10pt;
+  color: #707b86;
+  padding-right: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.container-1 .icon{
+  position: absolute;
+  top: -16%;
+  right: 17%;
+  margin-right: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: black;
+}
+
+.container-1 a
+{
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  right: -70%;
+  margin: 15px;
+  font-size: 13px;
+}
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+  outline:none;
+  background: #ffffff;
+
+}
+/* ------------------------------------------------------------------------------- */
+#header
+{
+  position: fixed; /*cố định menu*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  height: 40px;
+  background: black;
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.danhmuc
+{
+  float: left;
+  width: 90%; 
+}
+.dinhdang
+{
+  float: left;
+  width: 62%;
+  margin: 15px;
+  font-size: 13pt;
+}
+/* menu */
+.clearfix:after {
+  display:block;
+  clear:both;     
+  position: fixed;     
+}
+.wrapper {
+  box-shadow:0px 1px 3px rgba(0,0,0,0.2); 
+  background: white;
+}
+
+.menu {
+  width: 1060px;
+  margin: 0px -530px;
+  background: white;
+  height: 50px;
+  margin-top: -40px;
+  position: fixed; 
+  right: 50%;
+}
+.menu li {
+  margin:0px;
+  list-style:none;
+  font-family:'Ek Mukta';
+}
+.menu a {
+  transition:all linear 0.15s;
+  color: white;
+  text-decoration:none;
+}
+.menu li:hover > a, .menu .current-item > a {
+  text-decoration:none;
+  color:rgba(255, 255, 255, 0.794);
+} 
+.menu .arrow {
+  font-size:11px;
+  line-height:0%;
+} 
+.menu > ul > li {
+  float: left;
+  font-weight: bold;
+  position:relative;
+  font-size:18px;
+}
+.menu > ul > li > a {
+  padding:14px 40px;
+  display:inline-block;
+  color:rgba(0, 0, 0, 0.753);
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+  background:#0e0d0d75;
+}
+
+/*----menusub----*/
+.menu li:hover .sub-menu {
+  z-index:1;
+  opacity:1;
+}
+.sub-menu {
+  width:100%;
+  padding:5px 0px;
+  position:absolute;
+  top:100%;
+  left: 0px;
+  z-index:-1;
+  opacity:0;
+  transition:linear 0.15s;
+  box-shadow:0px 2px 3px rgba(0, 0, 0, 0.74);
+  background:#181616be;
+}
+.sub-menu li {
+  display:block;
+  font-size:16px;
+}
+
+.sub-menu li a {
+  padding:10px 30px;
+  display:block;
+  text-align: center;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+  background:rgba(0, 0, 0, 0.863);
+}
+
+.sub-menu-1 {
+  width:200%;
+  padding:5px 0px;
+  position:absolute;
+  top:100%;
+  left: 0px;
+  z-index:-1;
+  opacity:0;
+  transition:linear 0.15s;
+  box-shadow:0px 2px 3px rgba(0, 0, 0, 0.74);
+  background:#181616be;
+}
+.menu li:hover .sub-menu-1 {
+  z-index:1;
+  opacity:1;
+}
+.sub-menu-1 li {
+  display:block;
+  font-size:18px;
+}
+.sub-menu-1 li a {
+  padding:10px 30px;
+  display:block;
+  text-align: center;
+}
+.sub-menu-1 li a:hover, .sub-menu .current-item a {
+  background:rgba(0, 0, 0, 0.863);
+}
+
+
+/* Nội dung */
+article
+{
+  margin: 80px auto;
+  max-width: 1060px;
+  background: white;
+  text-align: center;
+  align-items: center;
+}
+footer {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  float: right;
+}
+
+
+.cot
+{
+    background-color: #ffffff;
+    width: 25%;
+    float: left;
+}
+
+.sanpham
+{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.sanpham>.ten
+{
+    font-variant: small-caps;
+    position: relative;
+    bottom: -24px;
+}
+.sanpham>.img
+{
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    }
+
+.sanpham>.gia
+{
+  
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    font-size: 15px;
+}
+
+.sanpham>.icons
+{
+    position: absolute;
+    right: 5px;
+    bottom: 25px;
+    width: 25px;
+}
+
+.sanpham>.new-icon
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.sanpham img:hover
+{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.356);
+}
+
+
+
+/* footer */
+footer{
+  background-color:rgb(255, 255, 255);
+  text-align:center;
+  padding:5px;
+  font-size:18px;
+}
+footer{
+  width: 100%;
+  background: rgb(0, 0, 0);
+  color: white;
+  margin-left: 2rem ;
+}
+
+.footer1
+{
+  font-size: 16px;
+}
+.footer-bottom{
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5% 0 ;
+}
+.footer-bottom a{
+  text-decoration: none;
+  color: #888;
+}
+.footer-1{
+  text-align: initial;
+  flex-direction: column;
+  width: 40%;
+  position: relative;
+  left: -10%;
+}
+.footer-1 img
+{
+  position: relative;
+  right: 0%;
+  top: -20px
+}
+.footer-2
+{
+  text-align: initial;
+  flex-direction: column;
+  width: 15%;
+  margin-top: -90px;
+  position: relative;
+  right: 1%;
+}
+.footer-3
+{
+  text-align: initial;
+  flex-direction: column;
+  width: 20%;
+  margin-top: -93px;
+  position: relative;
+  right: -10%;
+}
+.footer-4
+{
+  text-align: initial;
+  flex-direction: column;
+  width: 45%;
+  margin-top: -35px;
+  position: relative;
+  right: -20%;
+}
+
+/* --------------------------- */
+table
+{
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+thead
+{
+  background-color: #000000;
+  border: 1px solid #ffffff;
+
+}
+th
+{
+  padding: 50px;
+} 
+td
+{
+    border: 1px solid #080808;
+    padding: 0 0;
+}
+th
+{
+  border: 1px solid #f3f3f3;
+
+}
+
+.color1
+{
+    color: rgb(255, 255, 255);
+}
+
+td h1:hover
+{
+  color: blue;
+}
