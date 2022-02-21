@@ -324,7 +324,7 @@ footer{
 }
 .footer-bottom{
   display: flex;
-  width: 60%;
+  width: 65%;
   justify-content: space-around;
   align-items: center;
   padding: 1.5% 0 ;
